@@ -4,5 +4,6 @@
 
 
 ### Installation of .net core
-Go to [dot.net](http://dot.net) and click on download.    
-As you can see this version of .NET will work on all platforms.
+Go to [dot.net](http://dot.net) and click on [download](https://www.microsoft.com/net/download), and on [.NET Core](https://www.microsoft.com/net/download/core) and choose you OS.    
+As you can see this version of .NET will work on all platforms.    
+Follow the instructions.

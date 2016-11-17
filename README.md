@@ -23,7 +23,7 @@ _(If you are on Windows choose "Select your environment" -> "Command Line / Othe
 ````
 mkdir aspnetcoreapp
 cd aspnetcoreapp
-dotnet new
+dotnet new -t web
 ````
 3. Restore the packages:
 ````

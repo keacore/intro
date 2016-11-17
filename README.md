@@ -22,4 +22,6 @@ _(If you are on Windows choose "Select your environment" -> "Command Line / Othe
 * [Install .NET Core](https://www.microsoft.com/net/download/core)
 * [VS Code](https://code.visualstudio.com/)
 * [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started)
+* [Visual Studio Download](https://www.visualstudio.com/downloads/)
+* [Visual Studio for MAC Download](https://www.visualstudio.com/vs/visual-studio-mac/)
 

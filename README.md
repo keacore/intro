@@ -24,20 +24,16 @@ _(If you are on Windows choose "Select your environment" -> "Command Line / Othe
 mkdir aspnetcoreapp
 cd aspnetcoreapp
 dotnet new -t web
-
 ````
 3. Restore the packages:
-
-´´´´
+````
 dotnet restore
-
-´´´´
+````
 4. Run the app (the dotnet run command will build the app when it's out of date):
-´´´´
+````
 dotnet run
-
-´´´´
-5. Browse to ´´´´ http://localhost:5000 ´´´´
+````
+5. Browse to ```` http://localhost:5000 ````
 
 
 

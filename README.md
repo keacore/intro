@@ -12,12 +12,14 @@ creating a basic asp.net web application. We will also install and start using t
 In connection with deployment we will shortly touch the use of a Docker Image as the platform for our deployed ASP.NET Core Application.
 
 ## Installation of .net core
-Go to [dot.net](http://dot.net) and click on [download](https://www.microsoft.com/net/download), and on [.NET Core](https://www.microsoft.com/net/download/core) and choose you OS.        
-Follow the instructions.    
+Go to [dot.net](http://dot.net) and click on [download](https://www.microsoft.com/net/download), and on 
+[.NET Core](https://www.microsoft.com/net/download/core). Choose you OS, and follow the instructions.         
 _(If you are on Windows choose "Select your environment" -> "Command Line / Other")_.   
 
 
 ## Resources
 * [dot.net] (http://dot.net)
+* [Install .NET Core](https://www.microsoft.com/net/download/core)
+* [VS Code](https://code.visualstudio.com/)
 * [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started)
 

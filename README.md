@@ -24,4 +24,5 @@ _(If you are on Windows choose "Select your environment" -> "Command Line / Othe
 * [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started)
 * [Visual Studio Download](https://www.visualstudio.com/downloads/)
 * [Visual Studio for MAC Download](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Migrating From ASP.NET MVC to ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/migration/mvc)
 

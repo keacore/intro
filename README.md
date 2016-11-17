@@ -20,12 +20,12 @@ _(If you are on Windows choose "Select your environment" -> "Command Line / Othe
 1. Install [.NET Core](https://www.microsoft.com/net/core#macos)
 2. Create a new .NET Core project:
 
-´´´´
+````
 mkdir aspnetcoreapp
 cd aspnetcoreapp
 dotnet new -t web
 
-´´´´
+````
 3. Restore the packages:
 
 ´´´´

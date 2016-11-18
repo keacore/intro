@@ -38,8 +38,8 @@ dotnet run
 
 
 
-## Resources
-* [dot.net] (http://dot.net)
+## Resources    
+* [dot.net](http://dot.net)
 * [Install .NET Core](https://www.microsoft.com/net/download/core)
 * [VS Code](https://code.visualstudio.com/)
 * [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started)

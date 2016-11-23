@@ -104,7 +104,7 @@ Hello World!
 
 1. Run the application and navigate to the root. It should show the hello world middleware.
 
-	![Hello World](Images/hello-world.png?raw=true "Hello World")
+	![Hello World](https://github.com/keacore/intro/blob/master/Images/Helloworld_Browser_example.png)
 
 	_Hello World_
 

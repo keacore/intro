@@ -147,5 +147,7 @@ In this task, you'll use the **UseFileServer** to enable serving both, static an
 
 
 
+<div style="text-align: right">
 
 &copy; <small><i>https://github.com/Microsoft-Build-2016/CodeLabs-WebDev/blob/master/Module2-AspNetCore/README.md#exercise-1-working-with-static-files</i></small>
+</div>

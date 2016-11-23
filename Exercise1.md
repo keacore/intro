@@ -110,7 +110,7 @@ Hello World!
 
 1. Navigate to **index.html** and it should show the static page in **wwwroot**.
 
-	![Hello World static](Images/hello-world-aspnet-core.png?raw=true "Hello World static")
+	![Hello World static](/Images/HelloWorld_Browser_HTML_Example.png)
 
 	_Hello World static_
 

@@ -22,7 +22,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 	"dependencies": {
 		"Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
     	"Microsoft.AspNetCore.StaticFiles": "1.0.0",
-		"Microsoft.AspNetCore.Mvc": "6.0.0-rc1-final"
+		"Microsoft.AspNetCore.Mvc" : "1.0.0-rc2-final"
 	},
 	````
 
@@ -47,7 +47,6 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 
 1. Now, open the **Startup.cs** file and add the MVC services and middleware to the configuration, adding `services.AddMvc()` and replacing the `app.Run` method call in the **Configure** method with the `UseMvc` method as shown in the following code snippet.
 
-	<!-- mark:3,13-18 -->
 	````C#
     public void ConfigureServices(IServiceCollection services)
     {
@@ -57,8 +56,6 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app)
     {
-        app.UseIISPlatformHandler();
-
         app.UseFileServer();
 
         app.UseMvc(routes =>

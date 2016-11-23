@@ -32,7 +32,7 @@ dotnet run
 Hello World!
 ````
 
-1. Add the **Microsoft.AspNet.Server.Kestrel** and the **Microsoft.AspNet.StaticFiles** package as a dependency to **project.json**.
+1. Add the **Microsoft.AspNetCore.Server.Kestrel** and the **Microsoft.AspNetCore.StaticFiles** package as a dependency to **project.json**.
 
 	````JSON
 	"dependencies": {

@@ -50,6 +50,7 @@ Hello World!
 
                 var host = new WebHostBuilder()
                     .UseKestrel()
+					.UseContentRoot(Directory.GetCurrentDirectory())
                     .UseStartup<Startup>()
                     .Build();
 
@@ -59,7 +60,7 @@ Hello World!
     ````
  
 
-1. Create a **Startup.cs** file and add the **UseStaticFiles** method call in the **Configure** method before the hello world middleware.
+1. Create a **Startup.cs** file and add the middleware **UseStaticFiles** method in the **Configure** method before the hello world middleware.
 
 	<!-- mark:5 -->
 	````C#

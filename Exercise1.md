@@ -17,7 +17,7 @@ In this task, you'll create an empty ASP.NET Core 1.0 project and configure it t
 ````
 mkdir aspnetcoreapp
 cd aspnetcoreapp
-dotnet new -t web
+dotnet new
 ````
 2. Restore the packages:
 ````
@@ -29,15 +29,15 @@ dotnet run
 ````
 4. The Console should now show:
 ````
-Hello World
+Hello World!
 ````
 
 1. Add the **Microsoft.AspNet.Server.Kestrel** and the **Microsoft.AspNet.StaticFiles** package as a dependency to **project.json**.
 
 	````JSON
 	"dependencies": {
-	  "Microsoft.AspNet.Server.Kestrel": "1.1.0-preview1-final",
-	  "Microsoft.AspNet.StaticFiles": "1.1.0-preview1-final"
+	  	"Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+    	"Microsoft.AspNetCore.StaticFiles": "1.0.0"
 	},
 	````
 
@@ -63,16 +63,27 @@ Hello World
 
 	<!-- mark:5 -->
 	````C#
-    public void Configure(IApplicationBuilder app)
-    {
+			using Microsoft.AspNetCore.Builder;
+			using Microsoft.AspNetCore.Http;
 
-        app.UseStaticFiles();
+			namespace ConsoleApplication
+			{
+				public class Startup
+				{
 
-        app.Run(async (context) =>
-        {
-            await context.Response.WriteAsync("Hello World!");
-        });
-    }
+					public void Configure(IApplicationBuilder app)
+					{
+
+						app.UseStaticFiles();
+
+						app.Run(async (context) =>
+						{
+							await context.Response.WriteAsync("Hello World!");
+						});
+					}
+				}
+
+			}
 	````
 
 1. Create a folder called wwwroot and a file called **index.html** with the following contents in the **wwwroot** folder.

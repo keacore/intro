@@ -130,7 +130,6 @@ In this task, you'll use the **UseFileServer** to enable serving both, static an
 	````C#
     public void Configure(IApplicationBuilder app)
     {
-        app.UseIISPlatformHandler();
 
         app.UseFileServer();
 

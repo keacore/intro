@@ -46,6 +46,7 @@ dotnet run
 * [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started)
 * [Visual Studio Download](https://www.visualstudio.com/downloads/)
 * [Visual Studio for MAC Download](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Yeoman generator-aspnet](https://github.com/OmniSharp/generator-aspnet)
 * [Migrating From ASP.NET MVC to ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/migration/mvc)
 * [ASP.NET Core from the command line](https://cmatskas.com/asp-net-core-from-the-command-line/)
 * [How to set the hosting environment in ASP.NET Core](http://andrewlock.net/how-to-set-the-hosting-environment-in-asp-net-core/)

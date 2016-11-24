@@ -69,3 +69,6 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 1. Run the site and verify the message is returned from your MVC controller by navigating to the **/home** endpoint.
 
 	> **Note:** ASP.NET Core MVC also includes a handy new utility method, `app.UseMvcWithDefaultRoute` so you don't have to remember that template string.
+
+
+&copy; <i>https://github.com/Microsoft-Build-2016/CodeLabs-WebDev/tree/master/Module2-AspNetCore#exercise-2-introduction-to-routing--mvc</i>

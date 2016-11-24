@@ -7,7 +7,6 @@ ASP.NET Core routing enables you to use URLs that do not have to map to specific
 
 In this exercise, you'll learn how to configure routing in your application.
 
-<a name="Ex2Task1" ></a>
 ## Task 1 - Adding MVC ##
 
 ASP.NET Core MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup for enjoyable, agile development. ASP.NET MVC includes many features that enable fast, TDD-friendly development for creating sophisticated applications that use the latest web standards.

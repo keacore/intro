@@ -21,7 +21,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 	"dependencies": {
 		"Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
     	"Microsoft.AspNetCore.StaticFiles": "1.0.0",
-		"Microsoft.AspNetCore.Mvc" : "1.0.0-rc2-final"
+		"Microsoft.AspNetCore.Mvc" : "1.0.0-*"
 	},
 	````
 
@@ -34,7 +34,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 	````C#
 	namespace ConsoleApplication
 	{
-		 using Microsoft.AspNet.Mvc;
+		 using Microsoft.AspNetCore.Mvc;
 
 		 public class HomeController : Controller
 		 {

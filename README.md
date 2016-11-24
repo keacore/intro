@@ -49,4 +49,3 @@ dotnet run
 * [Migrating From ASP.NET MVC to ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/migration/mvc)
 * [ASP.NET Core from the command line](https://cmatskas.com/asp-net-core-from-the-command-line/)
 * [How to set the hosting environment in ASP.NET Core](http://andrewlock.net/how-to-set-the-hosting-environment-in-asp-net-core/)
-* 

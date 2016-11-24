@@ -33,7 +33,7 @@ dotnet restore
 ````
 dotnet run
 ````
-5. Browse to ```` http://localhost:5000 ````
+
 
 
 

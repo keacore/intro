@@ -71,4 +71,6 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 	> **Note:** ASP.NET Core MVC also includes a handy new utility method, `app.UseMvcWithDefaultRoute` so you don't have to remember that template string.
 
 
+You can find a finished version in the [exercise2](https://github.com/keacore/intro/tree/master/exercise2) foler
+
 &copy; <i>https://github.com/Microsoft-Build-2016/CodeLabs-WebDev/tree/master/Module2-AspNetCore#exercise-2-introduction-to-routing--mvc</i>

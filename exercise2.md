@@ -73,9 +73,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 In your **Project.json** file you need to add a build option, ````"preserveCompilationContext": true````  
 for runtime compilation.
 
-    
-
-````"preserveCompilationContext": true```` is required for view compilation (at runtime) 
+**preserveCompilationContext** is required for view compilation (at runtime) 
 or any other runtime compilation. This means that without this you will not be able to 
 return a **View**
 

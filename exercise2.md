@@ -34,7 +34,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 	````C#
 	using Microsoft.AspNetCore.Mvc;
 
-	namespace ConsoleApplication
+	namespace ConsoleApplication.Controllers
 	{
 		 public class HomeController : Controller
 		 {
@@ -73,37 +73,88 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 In your **Project.json** file you need to add a build option, ````"preserveCompilationContext": true````  
 for runtime compilation.
 
-**preserveCompilationContext** is required for view compilation (at runtime) 
+**preserveCompilationContext** is required for **View** compilation (at runtime) 
 or any other runtime compilation. This means that without this you will not be able to 
 return a **View**
 
-So your **Project.json** file now looks like this:
+1. So your **Project.json** file now looks like this:
 
 	````JSON
-		 {
-			"version": "1.0.0-*",
-			"buildOptions": {
-				"debugType": "portable",
-				"emitEntryPoint": true,
-				"preserveCompilationContext": true
-			},
-			"dependencies": {},
-			"frameworks": {
-				"netcoreapp1.0": {
-				"dependencies": {
-					"Microsoft.NETCore.App": {
-					"type": "platform",
-					"version": "1.0.0"
-					},
-					"Microsoft.AspNetCore.Mvc": "1.0.0",
-					"Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
+	{
+		"version": "1.0.0-*",
+		"buildOptions": {
+			"debugType": "portable",
+			"emitEntryPoint": true,
+			"preserveCompilationContext": true
+		},
+		"dependencies": {},
+		"frameworks": {
+			"netcoreapp1.0": {
+			"dependencies": {
+				"Microsoft.NETCore.App": {
+				"type": "platform",
+				"version": "1.0.0"
 				},
-				"imports": "dnxcore50"
-				}
+				"Microsoft.AspNetCore.Mvc": "1.0.0",
+				"Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
+			},
+			"imports": "dnxcore50"
 			}
 		}
+	}
+	````
+1. Change your HomeController to:
+
+	````C#
+	using Microsoft.AspNetCore.Mvc;
+
+	namespace ConsoleApplication.Controllers
+	{
+		 public class HomeController : Controller
+		 {
+			  [HttpGet()]
+			  public IActionResult Index() 
+			  {
+				  return View();
+			  } 
+		 }
+	}
+	````
+1. Create a **Views** folder with a **Home** folder inside 
+and a Index.cshtml file in that. You directory should now look like this
+
+	````
+	├── Controllers
+	│   └── HomeController.cs
+	├── Program.cs
+	├── Startup.cs
+	├── Views
+	│   └── Home
+	│       └── Index.cshtml
+	├── bin
+	├── obj
+	├── project.json
+	├── project.lock.json
+	└── wwwroot
+		└── index.html
+	````
+1. Add the following to your Index.cshtml file
+
+	````html
+	<!DOCTYPE HTML>
+	<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>ASP.NET Core Website</title>
+	</head>
+	<body>
+		<h1>Hello from Index View</h1>
+	</body>
+	</html>
 	````
 
+1. Run the site and verify that the View is returned from your 
+MVC controller by navigating to the **/home** endpoint.
 
 You can find a finished version in the [exercise2](https://github.com/keacore/intro/tree/master/exercise2) foler
 

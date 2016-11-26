@@ -70,7 +70,7 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 
 ## Task 2 - Adding a View
 
-In your **Project.json** file you need to add a build option,````JSON "preserveCompilationContext": true````  
+In your **Project.json** file you need to add a build option,```` "preserveCompilationContext": true````  
 for runtime compilation.
 
     

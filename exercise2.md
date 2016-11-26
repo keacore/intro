@@ -32,10 +32,10 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 1. Add the following code snippet.
 
 	````C#
+	using Microsoft.AspNetCore.Mvc;
+
 	namespace ConsoleApplication
 	{
-		 using Microsoft.AspNetCore.Mvc;
-
 		 public class HomeController : Controller
 		 {
 			  [HttpGet()]
@@ -55,8 +55,6 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app)
     {
-        app.UseFileServer();
-
         app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -69,6 +67,46 @@ In this task, you'll configure the project to use ASP.NET Core MVC and configure
 1. Run the site and verify the message is returned from your MVC controller by navigating to the **/home** endpoint.
 
 	> **Note:** ASP.NET Core MVC also includes a handy new utility method, `app.UseMvcWithDefaultRoute` so you don't have to remember that template string.
+
+## Task 2 - Adding a View
+
+In your **Project.json** file you need to add a build option for runtime compilation.
+
+    ````JSON
+		
+		"preserveCompilationContext": true	
+    ````     
+
+````"preserveCompilationContext": true```` is required for view compilation (at runtime) 
+or any other runtime compilation. This means that without this you will not be able to 
+return a **View**
+
+So your **Project.json** file now looks like this:
+
+	````JSON
+		 {
+			"version": "1.0.0-*",
+			"buildOptions": {
+				"debugType": "portable",
+				"emitEntryPoint": true,
+				"preserveCompilationContext": true
+			},
+			"dependencies": {},
+			"frameworks": {
+				"netcoreapp1.0": {
+				"dependencies": {
+					"Microsoft.NETCore.App": {
+					"type": "platform",
+					"version": "1.0.0"
+					},
+					"Microsoft.AspNetCore.Mvc": "1.0.0",
+					"Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
+				},
+				"imports": "dnxcore50"
+				}
+			}
+		}
+	````
 
 
 You can find a finished version in the [exercise2](https://github.com/keacore/intro/tree/master/exercise2) foler

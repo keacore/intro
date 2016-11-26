@@ -156,6 +156,8 @@ and a Index.cshtml file in that. You directory should now look like this
 1. Run the site and verify that the View is returned from your 
 MVC controller by navigating to the **/home** endpoint.
 
+![Home Index View](/Images/viewcshtml.png)
+
 You can find a finished version in the [exercise2](https://github.com/keacore/intro/tree/master/exercise2) foler
 
 &copy; <i>https://github.com/Microsoft-Build-2016/CodeLabs-WebDev/tree/master/Module2-AspNetCore#exercise-2-introduction-to-routing--mvc</i>

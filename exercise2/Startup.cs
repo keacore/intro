@@ -15,7 +15,7 @@ namespace ConsoleApplication
 
         public void Configure(IApplicationBuilder app)
         {
-            app.UseFileServer();
+            //app.UseFileServer();
 
             app.UseMvc(routes =>
                 {
